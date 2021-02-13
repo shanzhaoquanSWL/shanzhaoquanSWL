@@ -1,0 +1,13 @@
+D:\GCLDServer\wwwroot\Config.xml
+--进入显示后端内容--
+D:\GCLDServer\server\gcld\apps\app.properties
+D:\GCLDServer\server\gcld\apps\applicationContext.xml
+D:\GCLDServer\server\gcld\apps\gcld.properties
+D:\GCLDServer\server\gcld\apps\plugins.xml
+D:\GCLDServer\wwwroot\Main.html
+--------------------------------------------
+D:\GCLDServer\server\gcld\apps\server.properties
+--角色初始修改--
+
+
+index">200</field><field name="id">31</field>  等级查询   最终任务
