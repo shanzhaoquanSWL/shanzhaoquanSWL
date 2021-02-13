@@ -1,0 +1,60 @@
+<row>
+<field name="broad_cast">0</field> 这边 不用修改
+<field name="tactic_id">0</field>  这是武将技能ID 下面会说明如何选
+<field name="strength">0</field>   这边是勇
+<field name="name">诸葛亮</field> 武将名称
+<field name="sp_i"></field>  这边也可以不用新增
+<field name="type">1</field> 不用更改
+<field name="pic">zhugeliang</field> 图片
+<field name="leader">0</field> 武将的统
+<field name="stratagem_id">0</field> 不用修改
+<field name="intro"></field>   武将最下面说明
+<field name="troop">0</field>  兵种 (26 是周泰用的全地形兵种)
+<field name="up_exp_s">33</field> 这不用修改
+<field name="politics">84</field> 这也不用修改
+<field name="up_exp_e">1</field> 这也不用修改
+<field name="quality">6</field> 武将品質 6 =紫色 5=红色 4 = 黄色 3= 绿色 2 = 蓝色 1= 白色
+<field name="id">101</field> 武将编号 不用修改
+<field name="sp"></field> 天赋 只可选一 zf 施放两次战法 yx= 无视对方地形加成 td,4,0.5 = 战法防护减免50% td,4,0.7 = 战法减免70% ft,1 = 100%反弹 ft,0.5 = 50%反弹
+<field name="intel">26</field>  不知道
+</row>
+
+
+武将技能 收寻文件中的 
+
+<table name="tactic">
+20 = 伐谋破阵 技能代号 1201
+19 = 震天咆哮 代号 1101
+18 = 乘胜追击 代号 1002
+17 = 女帝 代号 701
+16 = 空
+15 = 定军孤魂 代号 501
+14 背水奋战 代号802
+13 背水 代号 502
+12 = 空
+11 = 天谴飓风 代号 801
+10 = 固守 代号604
+9 = 石破天惊 代号901
+8 = 铁骑无敌 代号 701
+7 = 武神附体 代号 1102
+6 = 万箭齐发 代号 
+5 = 枪林箭雨 代号 902
+4 = 入侵 代号 601 602
+3 = 猛攻
+2 = 烈弓 
+1 = 奇袭 代号1001
+
+
+
+<row>
+<field name="display_id">18</field> 上面的代号就是这边
+<field name="name">乘胜追击</field> 名称可自行修改
+<field name="playertime">1300</field> 不知道
+<field name="special_effect"></field> 不用填
+<field name="pic">31</field> 技能图片代号
+<field name="basic_pic">3</field> 技能图片代号
+<field name="range">4</field> 战法伤害 打几排
+<field name="intro"></field> 不用填
+<field name="damage_e">0.515</field> 战法系数 详细不知道怎算 数字越小伤害越低
+<field name="id">1002</field> 这边可以自行新增修改ID 技能编号 填入武将的
+</row>
