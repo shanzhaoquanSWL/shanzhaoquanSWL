@@ -1,0 +1,251 @@
+tickets_market  点卷商店
+store_items    装备商店
+world_treasure   世界宝箱
+tp_ft_treward    功勋宝箱开出的物品表
+<table name="equip">  装备商城
+etiquete_event   小倩恭喜礼仪
+etiquete_point   小倩恭喜礼仪奖励
+随便，这就是生活   国家事件  农田丰收，
+此处山体滑坡，
+
+端需要修改的地方  黄金枪，体验十分钟，一天300000人，红色武器，副本删除
+
+礼物太俗套，红包更实惠-----广结名士修改处
+
+
+event_daily      政务事件
+mine       势力铁矿
+official  官职奖励
+fst_nd_event    世界城市事件
+general  武将NPC统strength">200勇leader">200战法    name="sp">ft,0.3 等   可在此处加新武将
+general_recruit   酒馆招募武将 
+general_treasure  宝物
+hm_gt_main   县城小贩<br>交易上限:5次。<br>生意介绍:买卖         镔铁为生,到处搜罗低价镔铁。请用镔铁和他换取宝石
+hm_pw_main   左慈，南华老仙，水镜先生
+items   道具套装表
+kill_ranking  杀敌排名  kill_toplist  杀敌排行榜
+kill_toplist_treasure  杀敌排行榜奖励
+ranking_reward   攻城榜称号经验奖励
+kindom_task_ranking  王城任务排行
+market_products 赶集市场交易
+prison_catch_prob 监狱捕获概率
+prison_degree   监狱等级   prison_lv
+prison_lash_reward  鞭挞奖励
+prison reward    监狱的奖励
+troop_conscribe   军队征召入伍
+troop_conscribe_speed  军队征召入伍的速度
+world_guard   世界禁卫军
+
+player_wepon 兵器　宝石修改．　　
+1，为1级宝石　　1001，1级晶石修改最好手动修改，手自进阶　　最多改六个一多出错　
+player_tickets　 点卷改修　
+activity　　　   活动表
+store_house　    背包表
+player_task　　  任务
+player_tavern　　武将修改
+gcld_xs_sdata    科技表
+force_info       国家等级
+db_server        守卫
+playr_resource   人物资源
+playr_itm_rfresh 商店买装备 3:5;3:5;3:5;3:5;   6063
+player_general_civil   武将属性修改，统，勇，经验，兵力
+
+drop_index 
+
+GCLD gifi_info表礼包命令
+ gold   金币 
+ ticket 点券 
+ copper 银币 
+ lumber 木材  
+ food   粮食
+ iron   镔铁
+ ChiefExp 经验 
+ free_construction 黄金建筑队
+ recruit_token 募兵令 
+ arms_gem 一星宝石 
+ quesheqiang  雀舌枪 
+ tianhejia 天河黄金甲 
+ huangyufu 黄玉君王符
+
+数据库gcld
+
+活动时间：activity     可更改活动开始和结束时间
+开服时间：db_version  更改diff_day偏移天数，从2013年1月8日算起
+礼包内容：gift_info    可通过礼包软件发放礼包
+玩家角色：player       角色等级，金币数量、VIP等级
+角色资源：player_attribute   仓库数量，募兵令，黄金建筑队数量
+功勋宝箱：player_dragon     
+免费祭祀：player_incense    可更改免费祭祀数量
+祭祀倍率：player_incense_weapon_effect    金币祭祀和兵器祭祀的倍率
+免费洗练：player_quenching_relative
+玩家资源：player_resource   银币、粮食、木材、镔铁、经验
+科技状态：player_tech      
+用户名单：user            登录账号、密码
+投资卷数：player_coupon
+
+
+
+
+ 服务端出现的人物ID和信息表
+（包括武将ID，非武将也是可以招募的）
+ 常用的武将ID
+ 201 吕布，202 张飞
+ 203 关羽，204 赵云，205 马超，206 太史慈，211 黄忠，
+ 218 魏延，224 周泰，266 貂蝉，267 姜维，  268 司马懿
+ 111 孙权，110 陆逊，103 周瑜，101 诸葛亮，112 刘备
+
+
+开关快速战斗的方法，注意不要改错文件了
+GCLDServer\server\apps\server.properties
+是否启用快速战斗
+gcld.battle.quick = 1 改为0
+
+玩家仓库物品修改，需要修改代码，所有物品都可以凭空添加，
+物品代码以及信息去gcld_sdata里面的itms查
+
+
+
+nivacat连接数据库 打开gcld中的player_task   修改任务 ID
+
+
+PLAYER-LV  上线等级   consume_lv 是VIP等级
+
+max-lv   等级上限   SYS-GOLD   初始金币   USER 帐户金币
+
+进不了游戏的 修改改D:\GCLDServer\wwwroot里的 
+Config.xml 与Main.html 文件中的的IP为127.0.0.1
+
+游戏跳转的改gcld.properties IP就行
+
+
+
+<row><field name="display_id">30【这里是对应的SWF】</field><field name="name">枪出如龙【这个是技能名字】</field><field name="playertime">1500</field><field name="special_effect"></field><field name="pic">43</field><field name="basic_pic">7</field><field nield name="damage_e">2.3【这里是释放时间】
+<row><field name="broad_cast">0</field><field name="tactic_id">90203【武将技能】</field><field name="strength">250</field><field name="name">龙胆、赵云</field><field name="sp_i"></field><field name="type">2</field><field name="pic">zhaoyunjx【武将图片】</field><field name="leader">250</field><field name="stratagem_id">0</field><field name="intro">觉醒赵云,以龙枪傲世，战遍天下,隐藏百分之20的反弹概率</field><field name="troop">1【兵种】</field><field name="up_exp_s">33</field><field name="politics">0</field><field name="up_exp_e">1</field><field name="quality">6<【武将颜色1-6】/field><field name="id">99999【武将ID】</field><field name="sp">ft,0.20【反弹】</field>
+
+
+
+
+<table name="string_c">
+<row><field name="value">1,1,1,1,1</field><field name="intro">商店商品价格倍率</field><field name="id">1</field><field name="param">Store.MutiList</field><field name="system">商店</field></row>
+<row><field name="value">1,0,0,0,0</field><field name="intro">商店价格倍率出现的概率</field><field name="id">2</field><field name="param">Store.MutiProb</field><field name="system">商店</field></row>
+<row><field name="value">1,1,1,1,1</field><field name="intro">武将招募价格倍率</field><field name="id">3</field><field name="param">General.MutiList</field><field name="system">武将招募</field></row>
+<row><field name="value">1,0,0,0,0</field><field name="intro">武将招募价格出现的概率</field><field name="id">4</field><field name="param">General.MutiProb</field><field name="system">武将招募</field></row>
+<row><field name="value">80,40,20</field><field name="intro">开启第二、三、四级NPC状态需要国家拥有的城池数低于列表中的数量</field><field name="id">5</field><field name="param">World.NPCNum.OwnedCityNumList</field><field name="system">世界</field></row>
+<row><field name="value">0.8,1.1,1.3,1.5,1</field><field name="intro">平原；林地；山地；水域；城池</field><field name="id">6</field><field name="param">World.Move.TerrainSpeedCoe</field><field name="system">世界</field></row>
+<row><field name="value">0.4,0.2,0.2,0.1,0.05,0.03,0.02</field><field name="intro">白，蓝，绿，黄，红，紫，金币分别出现的概率。</field><field name="id">7</field><field name="param">Market.Quality.ProbList</field><field name="system">集市</field></row>
+<row><field name="value">copper_e,30;lumber_e,30;food_e,30</field><field name="intro">民忠满100后的奖品</field><field name="id">8</field><field name="param">EventDaily.MingZhong.FullReward</field><field name="system">政务</field></row>
+<row><field name="value">35,60,90</field><field name="intro">武将宝物位开放的等级，等级之间用逗号分隔</field><field name="id">9</field><field name="param">GeneralTreasure.OpenLv.List</field><field name="system">武将宝物</field></row>
+<row><field name="value">0,3,13,20</field><field name="intro">世界城池人数状态的阀值，以武将记</field><field name="id">10</field><field name="param">World.CityStates.Thresholds</field><field name="system">世界</field></row>
+
+
+<table name="wd_sjp">
+<row><field name="name">宝石商人</field><field name="open">8</field><field name="pic">1</field><field name="interval_min">30</field><field name="interval_max">90</field><field name="close">24</field><field name="num_max">200</field><field name="id">1</field><field name="dis">10</field></row>
+<row><field name="name">军需官</field><field name="open">8</field><field name="pic">2</field><field name="interval_min">540</field><field name="interval_max">660</field><field name="close">24</field><field name="num_max">3</field><field name="id">2</field><field name="dis">5</field></row>
+<row><field name="name">玄铁原石</field><field name="open">8</field><field name="pic">3</field><field name="interval_min">540</field><field name="interval_max">660</field><field name="close">24</field><field name="num_max">3</field><field name="id">3</field><field name="dis">5</field></row>
+<row><field name="name">国庆宝物</field><field name="open">0</field><field name="pic">4</field><field name="interval_min">120</field><field name="interval_max">240</field><field name="close">24</field><field name="num_max">15</field><field name="id">4</field><field name="dis">10</field></row>
+<row><field name="name">世界剧本</field><field name="open">0</field><field name="pic">5</field><field name="interval_min">180</field><field name="interval_max">300</field><field name="close">24</field><field name="num_max">3</field><field name="id">5</field><field name="dis">10</field></row>
+<row><field name="name">练兵令</field><field name="open">0</field><field name="pic">6</field><field name="interval_min">180</field><field name="interval_max">300</field><field name="close">24</field><field name="num_max">4</field><field name="id">6</field><field name="dis">3</field></row>
+<row><field name="name">圣诞老人</field><field name="open">0</field><field name="pic">7</field><field name="interval_min">360</field><field name="interval_max">480</field><field name="close">24</field><field name="num_max">10</field><field name="id">7</field><field name="dis">10</field></row>
+<row><field name="name">山贼</field><field name="open">0</field><field name="pic">8</field><field name="interval_min">30</field><field name="interval_max">90</field><field name="close">24</field><field name="num_max">10</field><field name="id">8</field><field name="dis">10</field></row>
+
+
+
+<table name="wd_sj_ev">
+<row><field name="reward_1">ChiefExp,1840</field><field name="reward_2">copper,4600</field><field name="reward_lv">1</field><field name="name">战甲改良</field><field name="reward_disc_2">银币</field><field name="reward_disc_1">经验</field><field name="pic">5</field><field name="terrain">1</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">道路破旧，不是山路也要十八弯</field><field name="gold_consume_2">0</field><field name="disc_1">为民造福，修路！</field><field name="disc_2">财政紧张，再等等</field><field name="id">1</field><field name="view">1</field></row>
+<row><field name="reward_1">copper,3400</field><field name="reward_2">lumber,3400</field><field name="reward_lv">1</field><field name="name">战法创新</field><field name="reward_disc_2">木材</field><field name="reward_disc_1">银币</field><field name="pic">1</field><field name="terrain">1</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">农田丰收，却有赖皮阿三大搞破坏</field><field name="gold_consume_2">0</field><field name="disc_1">教训，以儆效尤</field><field name="disc_2">随便，这就是生活</field><field name="id">2</field><field name="view">1</field></row>
+<row><field name="reward_1">food,9200</field><field name="reward_2">ChiefExp,3680</field><field name="reward_lv">2</field><field name="name">改善伙食</field><field name="reward_disc_2">经验</field><field name="reward_disc_1">粮食</field><field name="pic">3</field><field name="terrain">1</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">农田丰收，村民大搞庆功宴</field><field name="gold_consume_2">0</field><field name="disc_1">溜进去蹭杯酒喝</field><field name="disc_2">看看，百姓开心就好</field><field name="id">3</field><field name="view">1</field></row>
+<row><field name="reward_1">iron,560</field><field name="reward_2">food,5600</field><field name="reward_lv">2</field><field name="name">战术素养</field><field name="reward_disc_2">粮食</field><field name="reward_disc_1">镔铁</field><field name="pic">4</field><field name="terrain">1</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">邻国战乱，大批灾民迁往我国</field><field name="gold_consume_2">0</field><field name="disc_1">收纳，以人为本！</field><field name="disc_2">驱逐，人口太多</field><field name="id">4</field><field name="view">1</field></row>
+<row><field name="reward_1">lumber,13000</field><field name="reward_2">copper,13000</field><field name="reward_lv">3</field><field name="name">突发战况</field><field name="reward_disc_2">银币</field><field name="reward_disc_1">木材</field><field name="pic">2</field><field name="terrain">1</field><field name="notice">巧妙处理木价上涨问题，深得爱戴！</field><field name="gold_consume_1">0</field><field name="disc">木价上涨，又一批投机者去了</field><field name="gold_consume_2">0</field><field name="disc_1">正缺木材，快去吧</field><field name="disc_2">投机取巧，阻拦</field><field name="id">5</field><field name="view">0</field></row>
+<row><field name="reward_1">ChiefExp,1120</field><field name="reward_2">food,2800</field><field name="reward_lv">1</field><field name="name">射箭训练</field><field name="reward_disc_2">粮食</field><field name="reward_disc_1">经验</field><field name="pic">5</field><field name="terrain">2</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">山路难于上青天，一步十九弯啊</field><field name="gold_consume_2">0</field><field name="disc_1">道路是命脉，修路！</field><field name="disc_2">钱啊，还是没钱，等吧</field><field name="id">6</field><field name="view">1</field></row>
+<row><field name="reward_1">iron,400</field><field name="reward_2">ChiefExp,1600</field><field name="reward_lv">1</field><field name="name">步兵训练</field><field name="reward_disc_2">经验</field><field name="reward_disc_1">镔铁</field><field name="pic">4</field><field name="terrain">2</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">山中自有黄金屋，快振兴经济啊</field><field name="gold_consume_2">0</field><field name="disc_1">开矿，大力发展</field><field name="disc_2">风险太大，等等吧</field><field name="id">7</field><field name="view">1</field></row>
+<row><field name="reward_1">copper,9200</field><field name="reward_2">food,9200</field><field name="reward_lv">2</field><field name="name">骑兵训练</field><field name="reward_disc_2">粮食</field><field name="reward_disc_1">银币</field><field name="pic">1</field><field name="terrain">2</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">山中秀美，再来点美女做旅游吧</field><field name="gold_consume_2">0</field><field name="disc_1">旅游壮大经济，办！</field><field name="disc_2">美女什么的，太俗！</field><field name="id">8</field><field name="view">1</field></row>
+<row><field name="reward_1">lumber,6800</field><field name="reward_2">iron,680</field><field name="reward_lv">2</field><field name="name">机械训练</field><field name="reward_disc_2">镔铁</field><field name="reward_disc_1">木材</field><field name="pic">2</field><field name="terrain">2</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">树儿直又直，斧头砍啊砍！</field><field name="gold_consume_2">0</field><field name="disc_1">伐木充军，壮大军备</field><field name="disc_2">保护环境，不准砍伐</field><field name="id">9</field><field name="view">1</field></row>
+<row><field name="reward_1">food,19000</field><field name="reward_2">ChiefExp,7600</field><field name="reward_lv">3</field><field name="name">军士选拔</field><field name="reward_disc_2">经验</field><field name="reward_disc_1">粮食</field><field name="pic">3</field><field name="terrain">2</field><field name="notice">大兴梯田，造福民众，真是一代好领导啊！</field><field name="gold_consume_1">0</field><field name="disc">山中梯田，就像一块大切糕啊！</field><field name="gold_consume_2">0</field><field name="disc_1">充分利用，扩充收成</field><field name="disc_2">风险过大，暂缓执行</field><field name="id">10</field><field name="view">0</field></row>
+<row><field name="reward_1">ChiefExp,2080</field><field name="reward_2">food,5200</field><field name="reward_lv">1</field><field name="name">军霸</field><field name="reward_disc_2">粮食</field><field name="reward_disc_1">经验</field><field name="pic">5</field><field name="terrain">3</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">水质污染严重，请速速治理</field><field name="gold_consume_2">0</field><field name="disc_1">快治理，可持续发展</field><field name="disc_2">经济为中心，无视</field><field name="id">11</field><field name="view">1</field></row>
+<row><field name="reward_1">food,2800</field><field name="reward_2">lumber,2800</field><field name="reward_lv">1</field><field name="name">逃兵</field><field name="reward_disc_2">木材</field><field name="reward_disc_1">粮食</field><field name="pic">3</field><field name="terrain">3</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">水产丰收，正是一年好时光</field><field name="gold_consume_2">0</field><field name="disc_1">收购，军粮终于够了</field><field name="disc_2">观望，以民为乐</field><field name="id">12</field><field name="view">1</field></row>
+<row><field name="reward_1">copper,6800</field><field name="reward_2">food,6800</field><field name="reward_lv">2</field><field name="name">放水</field><field name="reward_disc_2">粮食</field><field name="reward_disc_1">银币</field><field name="pic">1</field><field name="terrain">3</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">水中飘来一大群死猪，吓人啊</field><field name="gold_consume_2">0</field><field name="disc_1">速速打捞，防止污染</field><field name="disc_2">别管了，飘到敌国去</field><field name="id">13</field><field name="view">1</field></row>
+<row><field name="reward_1">lumber,10400</field><field name="reward_2">ChiefExp,4160</field><field name="reward_lv">2</field><field name="name">演练伤人</field><field name="reward_disc_2">经验</field><field name="reward_disc_1">木材</field><field name="pic">2</field><field name="terrain">3</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">打仗没船，射箭没弦啊！</field><field name="gold_consume_2">0</field><field name="disc_1">节约木材，等等就造</field><field name="disc_2">立即收购木材造船</field><field name="id">14</field><field name="view">1</field></row>
+<row><field name="reward_1">iron,1100</field><field name="reward_2">copper,11000</field><field name="reward_lv">3</field><field name="name">卧榻献刀</field><field name="reward_disc_2">银币</field><field name="reward_disc_1">镔铁</field><field name="pic">4</field><field name="terrain">3</field><field name="notice">发现大量镔铁，真乃天降祥瑞啊！</field><field name="gold_consume_1">0</field><field name="disc">水底发现大量镔铁，来源不明</field><field name="gold_consume_2">0</field><field name="disc_1">打捞使用，天助我也</field><field name="disc_2">劳民伤财，还是算了</field><field name="id">15</field><field name="view">0</field></row>
+<row><field name="reward_1">copper,4000</field><field name="reward_2">food,4000</field><field name="reward_lv">1</field><field name="name">大力士</field><field name="reward_disc_2">粮食</field><field name="reward_disc_1">银币</field><field name="pic">1</field><field name="terrain">4</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">有女当街征婚，名曰“罗玉凰”</field><field name="gold_consume_2">0</field><field name="disc_1">促进了经济，不错</field><field name="disc_2">成何体统，封杀！</field><field name="id">16</field><field name="view">1</field></row>
+<row><field name="reward_1">food,4600</field><field name="reward_2">copper,4600</field><field name="reward_lv">1</field><field name="name">射鸟会</field><field name="reward_disc_2">银币</field><field name="reward_disc_1">粮食</field><field name="pic">3</field><field name="terrain">4</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">有志不在年高，七岁孩童卖切糕</field><field name="gold_consume_2">0</field><field name="disc_1">低价强行收购！！</field><field name="disc_2">取缔，实在太坑了</field><field name="id">17</field><field name="view">1</field></row>
+<row><field name="reward_1">iron,920</field><field name="reward_2">lumber,9200</field><field name="reward_lv">2</field><field name="name">摔跤赛</field><field name="reward_disc_2">木材</field><field name="reward_disc_1">镔铁</field><field name="pic">4</field><field name="terrain">4</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">镔铁商人想入城，申请批准</field><field name="gold_consume_2">0</field><field name="disc_1">可以有，一万一位</field><field name="disc_2">保护城内商人，不准</field><field name="id">18</field><field name="view">1</field></row>
+<row><field name="reward_1">lumber,10400</field><field name="reward_2">food,10400</field><field name="reward_lv">2</field><field name="name">表演</field><field name="reward_disc_2">粮食</field><field name="reward_disc_1">木材</field><field name="pic">2</field><field name="terrain">4</field><field name="notice"></field><field name="gold_consume_1">0</field><field name="disc">木材商人想进城，申请批准</field><field name="gold_consume_2">0</field><field name="disc_1">可以有，收税五成</field><field name="disc_2">保护城内商人，不准</field><field name="id">19</field><field name="view">1</field></row>
+<row><field name="reward_1">ChiefExp,4400</field><field name="reward_2">copper,11000</field><field name="reward_lv">3</field><field name="name">天降神兵</field><field name="reward_disc_2">银币</field><field name="reward_disc_1">经验</field><field name="pic">5</field><field name="terrain">4</field><field name="notice">净化文化环境，精神文明大跃进！！</field><field name="gold_consume_1">0</field><field name="disc">城内风气很差，各种无下限行为</field><field name="gold_consume_2">0</field><field name="disc_1">讲文明，树新风！</field><field name="disc_2">只要经济，不要浮云！</field><field name="id">20</field><field name="view">0</field></row>
+
+
+<table name="wd_sjp_lbl">
+<row><field name="num">88</field><field name="intro">获得练兵令×2</field><field name="id">1</field><field name="prob">1</field></row>
+<row><field name="num">3</field><field name="intro">获得练兵令×3</field><field name="id">2</field><field name="prob">0.35</field></row>
+<row><field name="num">6</field><field name="intro">获得练兵令×6</field><field name="id">3</field><field name="prob">0.23</field></row>
+
+
+<table name="wd_sjp_sdlr">
+<row><field name="intro">获得礼盒×5</field><field name="num">5</field><field name="type">1</field><field name="id">1</field><field name="prob">0.18</field></row>
+<row><field name="intro">获得礼盒×10</field><field name="num">10</field><field name="type">1</field><field name="id">2</field><field name="prob">0.12</field></row>
+<row><field name="intro">获得礼盒×15</field><field name="num">15</field><field name="type">1</field><field name="id">3</field><field name="prob">0.03</field></row>
+<row><field name="intro">获得彩球×5</field><field name="num">5</field><field name="type">2</field><field name="id">4</field><field name="prob">0.18</field></row>
+<row><field name="intro">获得彩球×10</field><field name="num">10</field><field name="type">2</field><field name="id">5</field><field name="prob">0.12</field></row>
+<row><field name="intro">获得彩球×15</field><field name="num">15</field><field name="type">2</field><field name="id">6</field><field name="prob">0.03</field></row>
+<row><field name="intro">获得雪花×5</field><field name="num">5</field><field name="type">3</field><field name="id">7</field><field name="prob">0.19</field></row>
+<row><field name="intro">获得雪花×10</field><field name="num">10</field><field name="type">3</field><field name="id">8</field><field name="prob">0.12</field></row>
+<row><field name="intro">获得雪花×15</field><field name="num">15</field><field name="type">3</field><field name="id">9</field><field name="prob">0.03</field></row>
+
+
+<table name="wd_sjp_xtys">   获得玄铁原石
+<row><field name="consume_lumber">0</field><field name="consume_copper">0</field><field name="xtys_num">1</field><field name="consume_food">0</field><field name="prob">0.6</field><field name="intro">获得玄铁原石×1</field><field name="id">1</field></row>
+<row><field name="consume_lumber">0</field><field name="consume_copper">0</field><field name="xtys_num">2</field><field name="consume_food">0</field><field name="prob">0.3</field><field name="intro">获得玄铁原石×2</field><field name="id">2</field></row>
+<row><field name="consume_lumber">0</field><field name="consume_copper">0</field><field name="xtys_num">5</field><field name="consume_food">0</field><field name="prob">0.1</field><field name="intro">获得玄铁原石×5</field><field name="id">3</field></row>
+
+
+
+<table name="wd_sjp_gem">   貌似是宝石的
+<row><field name="multi">1,1;0,2;0,4;0,10;0,20</field><field name="end">2</field><field name="multi_2">0</field><field name="multi_4">0</field><field name="start">0</field><field name="multi_10">0</field><field name="multi_20">0</field><field name="id">1</field><field name="iron_init">100000</field><field name="iron_de">10000</field></row>
+<row><field name="multi">0.9,1;0.1,2;0,4;0,10;0,20</field><field name="end">6</field><field name="multi_2">0.1</field><field name="multi_4">0</field><field name="start">3</field><field name="multi_10">0</field><field name="multi_20">0</field><field name="id">2</field><field name="iron_init">75000</field><field name="iron_de">5000</field></row>
+<row><field name="multi">0.8,1;0.2,2;0,4;0,10;0,20</field><field name="end">14</field><field name="multi_2">0.2</field><field name="multi_4">0</field><field name="start">7</field><field name="multi_10">0</field><field name="multi_20">0</field><field name="id">3</field><field name="iron_init">58000</field><field name="iron_de">2000</field></row>
+<row><field name="multi">0.7,1;0.3,2;0,4;0,10;0,20</field><field name="end">28</field><field name="multi_2">0.3</field><field name="multi_4">0</field><field name="start">15</field><field name="multi_10">0</field><field name="multi_20">0</field><field name="id">4</field><field name="iron_init">43000</field><field name="iron_de">1000</field></row>
+<row><field name="multi">0.6,1;0.3,2;0.1,4;0,10;0,20</field><field name="end">58</field><field name="multi_2">0.3</field><field name="multi_4">0.1</field><field name="start">29</field><field name="multi_10">0</field><field name="multi_20">0</field><field name="id">5</field><field name="iron_init">29500</field><field name="iron_de">500</field></row>
+<row><field name="multi">0.45,1;0.3,2;0.2,4;0.05,10;0,20</field><field name="end">79</field><field name="multi_2">0.3</field><field name="multi_4">0.2</field><field name="start">59</field><field name="multi_10">0.05</field><field name="multi_20">0</field><field name="id">6</field><field name="iron_init">14800</field><field name="iron_de">200</field></row>
+<row><field name="multi">0.4,1;0.3,2;0.2,4;0.05,10;0.05,20</field><field name="end">119</field><field name="multi_2">0.3</field><field name="multi_4">0.2</field><field name="start">80</field><field name="multi_10">0.05</field><field name="multi_20">0.05</field><field name="id">7</field><field name="iron_init">10780</field><field name="iron_de">20</field></row>
+<row><field name="multi">0.25,1;0.35,2;0.25,4;0.1,10;0.05,20</field><field name="end">619</field><field name="multi_2">0.35</field><field name="multi_4">0.25</field><field name="start">120</field><field name="multi_10">0.1</field><field name="multi_20">0.05</field><field name="id">8</field><field name="iron_init">9990</field><field name="iron_de">10</field></row>
+<row><field name="multi">0.1,1;0.3,2;0.3,4;0.2,10;0.1,20</field><field name="end">1019</field><field name="multi_2">0.3</field><field name="multi_4">0.3</field><field name="start">620</field><field name="multi_10">0.2</field><field name="multi_20">0.1</field><field name="id">9</field><field name="iron_init">4995</field><field name="iron_de">5</field></row>
+<row><field name="multi">0,1;0.05,2;0.35,4;0.35,10;0.25,20</field><field name="end">0</field><field name="multi_2">0.05</field><field name="multi_4">0.35</field><field name="start">1019</field><field name="multi_10">0.35</field><field name="multi_20">0.25</field><field name="id">10</field><field name="iron_init">3000</field><field name="iron_de">0</field></row>
+
+
+<table name="world_treasure">
+<row><field name="pic">-</field><field name="reward">copper,8000</field><field name="type">1</field><field name="id">11</field><field name="name">银币1</field></row>
+<row><field name="pic">-</field><field name="reward">copper,9000</field><field name="type">1</field><field name="id">12</field><field name="name">银币2</field></row>
+<row><field name="pic">-</field><field name="reward">copper,11000</field><field name="type">1</field><field name="id">13</field><field name="name">银币3</field></row>
+<row><field name="pic">-</field><field name="reward">copper,12000</field><field name="type">1</field><field name="id">14</field><field name="name">银币4</field></row>
+<row><field name="pic">-</field><field name="reward">lumber,8000</field><field name="type">1</field><field name="id">21</field><field name="name">木材1</field></row>
+<row><field name="pic">-</field><field name="reward">lumber,9000</field><field name="type">1</field><field name="id">22</field><field name="name">木材2</field></row>
+<row><field name="pic">-</field><field name="reward">lumber,11000</field><field name="type">1</field><field name="id">23</field><field name="name">木材3</field></row>
+<row><field name="pic">-</field><field name="reward">lumber,12000</field><field name="type">1</field><field name="id">24</field><field name="name">木材4</field></row>
+<row><field name="pic">-</field><field name="reward">food,8000</field><field name="type">1</field><field name="id">31</field><field name="name">粮草1</field></row>
+<row><field name="pic">-</field><field name="reward">food,9000</field><field name="type">1</field><field name="id">32</field><field name="name">粮草2</field></row>
+<row><field name="pic">-</field><field name="reward">food,11000</field><field name="type">1</field><field name="id">33</field><field name="name">粮草3</field></row>
+<row><field name="pic">-</field><field name="reward">food,12000</field><field name="type">1</field><field name="id">34</field><field name="name">粮草4</field></row>
+<row><field name="pic">-</field><field name="reward">gold,50</field><field name="type">1</field><field name="id">41</field><field name="name">金币1</field></row>
+<row><field name="pic">-</field><field name="reward">gold,100</field><field name="type">1</field><field name="id">42</field><field name="name">金币2</field></row>
+<row><field name="pic">-</field><field name="reward">equip,1040</field><field name="type">1</field><field name="id">51</field><field name="name">装备1</field></row>
+<row><field name="pic">-</field><field name="reward">equip,2040</field><field name="type">1</field><field name="id">52</field><field name="name">装备2</field></row>
+<row><field name="pic">-</field><field name="reward">equip,3040</field><field name="type">1</field><field name="id">53</field><field name="name">装备3</field></row>
+<row><field name="pic">-</field><field name="reward">equip,4040</field><field name="type">1</field><field name="id">54</field><field name="name">装备4</field></row>
+<row><field name="pic">-</field><field name="reward">equip,5040</field><field name="type">1</field><field name="id">55</field><field name="name">装备5</field></row>
+<row><field name="pic">-</field><field name="reward">equip,6040</field><field name="type">1</field><field name="id">56</field><field name="name">装备6</field></row>
+
+
+
+
+<table name="world_search_event">
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">偶遇一棋翁</field><field name="level">1</field><field name="reward_disc_2">仙女为诚心所动，护百姓国泰民安，获得金1000</field><field name="reward_disc_1">一番交谈，受益匪浅,获得金1000</field><field name="pic">shijian2</field><field name="disc">探寻林中，偶遇女子仿佛兮若轻云之蔽月，飘飘兮若流风之回雪。远望似甄姬，近看黄月英。</field><field name="disc_1">上前攀谈求交往</field><field name="disc_2">原地跪地，诚心祈福</field><field name="type">1</field><field name="id">1</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访建邺</field><field name="level">1</field><field name="reward_disc_2">相谈甚欢，成为挚友，获得银10000</field><field name="reward_disc_1">闲云野鹤，无出世之心,飘然离去,获得银10000</field><field name="pic">shijian1</field><field name="disc">拜访农庄，与主人畅谈，听其三权分立之说，惊为天人</field><field name="disc_1">邀请出山，辅佐主公</field><field name="disc_2">虚心求教，顺其自然</field><field name="type">1</field><field name="id">2</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访洛阳</field><field name="level">2</field><field name="reward_disc_2">妖谢不杀之恩，赠予智慧石一枚，获得金500</field><field name="reward_disc_1">成功除妖，百姓感恩戴德,获得金500</field><field name="pic">shijian2</field><field name="disc">野郊寻访，河畔遇一女子，谈笑风生，后发现竟为树妖</field><field name="disc_1">斩妖，为民除害</field><field name="disc_2">众生平等，放其离去。</field><field name="type">1</field><field name="id">3</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访成都</field><field name="level">2</field><field name="reward_disc_2">仙人指点迷津，豁然开朗，获得银50000</field><field name="reward_disc_1">得仙人赏识，保佑百姓安居乐业,获得银50000</field><field name="pic">shijian1</field><field name="disc">深入民间慰问百姓，相谈正欢，忽遇仙人下凡</field><field name="disc_1">诚心祈福</field><field name="disc_2">上前请教</field><field name="type">1</field><field name="id">4</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访夷陵</field><field name="level">3</field><field name="reward_disc_2">顺天而为，福运无双，获得山竹一个</field><field name="reward_disc_1">仙人无尘缘，径自离去,获得山竹一个</field><field name="pic">shijian6</field><field name="disc">寻访城内，路遇仙人点化，不待详谈便乘车而去</field><field name="disc_1">追上请其一叙</field><field name="disc_2">虔诚送别</field><field name="type">1</field><field name="id">5</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访洛阳</field><field name="level">3</field><field name="reward_disc_2">得国家现况上奏主公，群臣赞叹，获得马蹄一堆</field><field name="reward_disc_1">大扬国法之威，百姓拜服,获得马蹄一堆</field><field name="pic">shijian5</field><field name="disc">深入闹市，闲庭信步，忽遇恶霸欺男霸女</field><field name="disc_1">出手制止</field><field name="disc_2">放任不管</field><field name="type">1</field><field name="id">6</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">偶遇一棋翁</field><field name="level">4</field><field name="reward_disc_2">百姓感恩戴德，均表谢意，获得神奇一条</field><field name="reward_disc_1">无欲无求，古井无波,获得神奇一条</field><field name="pic">shijian6</field><field name="disc">深入民间探访，遇冤案一桩，为民讨公道，临走民众相送，均问其名</field><field name="disc_1">无名无姓，就此离去</field><field name="disc_2">留下姓名，驱车离去</field><field name="type">1</field><field name="id">7</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访建邺</field><field name="level">4</field><field name="reward_disc_2">尽享民生之乐，获得牛马一顿</field><field name="reward_disc_1">杜绝扰民心之风，百姓感恩,获得牛马一顿</field><field name="pic">shijian5</field><field name="disc">深入民间探访，遇江湖术士，看相算卦</field><field name="disc_1">强行制止</field><field name="disc_2">顺其自然</field><field name="type">1</field><field name="id">8</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访洛阳</field><field name="level">5</field><field name="reward_disc_2">众志成城，人定胜天，获得猪羊一头</field><field name="reward_disc_1">上天应验，来年风调雨顺,获得猪羊一头</field><field name="pic">shijian3</field><field name="disc">深入民间探访，知本地收成欠佳，率众祭祀</field><field name="disc_1">求风调雨顺</field><field name="disc_2">祈万众一心</field><field name="type">1</field><field name="id">9</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访成都</field><field name="level">5</field><field name="reward_disc_2">细细记录，上奏主公，群臣拜服，获得潜艇一条</field><field name="reward_disc_1">惩治作假官员，百姓拜服,获得潜艇一条</field><field name="pic">shijian4</field><field name="disc">便服寻访，路过朝堂，知当地官员作假</field><field name="disc_1">亲自上堂</field><field name="disc_2">旁听断案</field><field name="type">1</field><field name="id">10</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访夷陵</field><field name="level">6</field><field name="reward_disc_2">军威无双，妖魔退散，获得鱼三千</field><field name="reward_disc_1">神灵为之所动，为民除害,获得鱼三千</field><field name="pic">shijian3</field><field name="disc">城内寻访，闻时有妖魔作怪，率众祭祀</field><field name="disc_1">祈神灵下凡，斩妖除魔</field><field name="disc_2">以贡品祭旗，率军铲除</field><field name="type">1</field><field name="id">11</field></row>
+<row><field name="reward_1">copper,1000</field><field name="reward_2">copper,1000</field><field name="name">寻访洛阳</field><field name="level">6</field><field name="reward_disc_2">能屈能伸，心境大涨，获得金100000</field><field name="reward_disc_1">大公无私，百姓谓之曰“青天”,获得金100000</field><field name="pic">shijian4</field><field name="disc">深入民间，观朝堂断案，逢皇亲杀人命案</field><field name="disc_1">天子犯法与庶民同罪</field><field name="disc_2">上报主公，等待定夺</field><field name="type">1</field><field name="id">12</field></row>
